@@ -10,11 +10,21 @@ import AVFoundation
 import Foundation
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-       
-        
+    //MARK: IB ACtions
+    
+    @IBAction func goToUIWidgetVC(_ sender: UIButton) {
+        performSegue(withIdentifier: Constants.MainViewController, sender: self)
     }
     
+    //MARK: LifeCycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Constants.MainViewController {
+            guard segue.destination is UIWidgetMainViewController else { return }
+            
+        }
+    }
 }
