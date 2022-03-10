@@ -9,12 +9,9 @@ import UIKit
 import AVFoundation
 import Foundation
 class ViewController: UIViewController {
-
-    //MARK: IB ACtions
     
-    @IBAction func goToUIWidgetVC(_ sender: UIButton) {
-        performSegue(withIdentifier: Constants.MainViewController, sender: self)
-    }
+    var coordinator: MainCoordinator?
+    
     
     //MARK: LifeCycle
     override func viewDidLoad() {
@@ -26,5 +23,14 @@ class ViewController: UIViewController {
             guard segue.destination is UIWidgetMainViewController else { return }
             
         }
+    }
+    //MARK: IB ACtions
+    
+    @IBAction func goToUIWidgetVC(_ sender: UIButton) {
+        performSegue(withIdentifier: Constants.MainViewController, sender: self)
+    }
+    
+    @IBAction func btnNavigation(_ sender: UIButton) {
+        coordinator?.openFirstVC()
     }
 }

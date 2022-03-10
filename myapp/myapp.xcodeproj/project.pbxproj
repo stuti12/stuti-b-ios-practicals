@@ -18,6 +18,16 @@
 		9419DD4E278D9A48004730AF /* myappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD4D278D9A48004730AF /* myappUITests.swift */; };
 		9419DD50278D9A48004730AF /* myappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD4F278D9A48004730AF /* myappUITestsLaunchTests.swift */; };
 		945430D427C60B7A0060EA46 /* UIComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945430D327C60B7A0060EA46 /* UIComponents.storyboard */; };
+		945F5C592811586C00F23504 /* FirstVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F5C482811586C00F23504 /* FirstVCCoordinator.swift */; };
+		945F5C5A2811586C00F23504 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F5C492811586C00F23504 /* AppCoordinator.swift */; };
+		945F5C5B2811586C00F23504 /* SecondVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F5C4A2811586C00F23504 /* SecondVCCoordinator.swift */; };
+		945F5C5C2811586C00F23504 /* MainVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F5C4B2811586C00F23504 /* MainVCCoordinator.swift */; };
+		945F5C5D2811586C00F23504 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F5C4C2811586C00F23504 /* Coordinator.swift */; };
+		945F5C5F2811586C00F23504 /* NavigationControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945F5C4F2811586C00F23504 /* NavigationControl.storyboard */; };
+		945F5C622811586C00F23504 /* GoTo3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F5C542811586C00F23504 /* GoTo3VC.swift */; };
+		945F5C632811586C00F23504 /* ForthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F5C552811586C00F23504 /* ForthVC.swift */; };
+		945F5C642811586C00F23504 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F5C562811586C00F23504 /* FirstVC.swift */; };
+		945F5C652811586C00F23504 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F5C572811586C00F23504 /* SecondVC.swift */; };
 		94850B1127C88C8D0099B3FE /* AutoAdvance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94850B1027C88C8D0099B3FE /* AutoAdvance.storyboard */; };
 		94A9E099280D85CB00225D41 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9E098280D85CB00225D41 /* SignUpViewController.swift */; };
 		94E9F0DD28113BAE0084AA98 /* UIWidget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E9F0C228113BAE0084AA98 /* UIWidget.storyboard */; };
@@ -75,6 +85,16 @@
 		9419DD4D278D9A48004730AF /* myappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myappUITests.swift; sourceTree = "<group>"; };
 		9419DD4F278D9A48004730AF /* myappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myappUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		945430D327C60B7A0060EA46 /* UIComponents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponents.storyboard; sourceTree = "<group>"; };
+		945F5C482811586C00F23504 /* FirstVCCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVCCoordinator.swift; sourceTree = "<group>"; };
+		945F5C492811586C00F23504 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		945F5C4A2811586C00F23504 /* SecondVCCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVCCoordinator.swift; sourceTree = "<group>"; };
+		945F5C4B2811586C00F23504 /* MainVCCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVCCoordinator.swift; sourceTree = "<group>"; };
+		945F5C4C2811586C00F23504 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		945F5C4F2811586C00F23504 /* NavigationControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NavigationControl.storyboard; sourceTree = "<group>"; };
+		945F5C542811586C00F23504 /* GoTo3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoTo3VC.swift; sourceTree = "<group>"; };
+		945F5C552811586C00F23504 /* ForthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthVC.swift; sourceTree = "<group>"; };
+		945F5C562811586C00F23504 /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		945F5C572811586C00F23504 /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		94850B1027C88C8D0099B3FE /* AutoAdvance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoAdvance.storyboard; sourceTree = "<group>"; };
 		94A9E098280D85CB00225D41 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		94E9F0C228113BAE0084AA98 /* UIWidget.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIWidget.storyboard; sourceTree = "<group>"; };
@@ -127,6 +147,8 @@
 		9419DD1D278D9A45004730AF = {
 			isa = PBXGroup;
 			children = (
+				94E9F0C828113BAE0084AA98 /* Constants.swift */,
+				945F5C462811586C00F23504 /* Navigation */,
 				94E9F0BF28113BAE0084AA98 /* UI Widget */,
 				945430D227C60B560060EA46 /* Basic AutoLayout */,
 				9419DD28278D9A45004730AF /* myapp */,
@@ -188,6 +210,56 @@
 			path = "Basic AutoLayout";
 			sourceTree = "<group>";
 		};
+		945F5C462811586C00F23504 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				945F5C472811586C00F23504 /* Coordinator */,
+				945F5C4E2811586C00F23504 /* StoryBoard */,
+				945F5C512811586C00F23504 /* Common */,
+				945F5C532811586C00F23504 /* ViewController */,
+			);
+			name = Navigation;
+			path = myapp/Navigation;
+			sourceTree = "<group>";
+		};
+		945F5C472811586C00F23504 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				945F5C482811586C00F23504 /* FirstVCCoordinator.swift */,
+				945F5C492811586C00F23504 /* AppCoordinator.swift */,
+				945F5C4A2811586C00F23504 /* SecondVCCoordinator.swift */,
+				945F5C4B2811586C00F23504 /* MainVCCoordinator.swift */,
+				945F5C4C2811586C00F23504 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		945F5C4E2811586C00F23504 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				945F5C4F2811586C00F23504 /* NavigationControl.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		945F5C512811586C00F23504 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		945F5C532811586C00F23504 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				945F5C542811586C00F23504 /* GoTo3VC.swift */,
+				945F5C552811586C00F23504 /* ForthVC.swift */,
+				945F5C562811586C00F23504 /* FirstVC.swift */,
+				945F5C572811586C00F23504 /* SecondVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		94E9F0BF28113BAE0084AA98 /* UI Widget */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,7 +301,6 @@
 		94E9F0C728113BAE0084AA98 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				94E9F0C828113BAE0084AA98 /* Constants.swift */,
 				94E9F0C928113BAE0084AA98 /* UIWidgetMainViewController.swift */,
 				94E9F0CA28113BAE0084AA98 /* FruitData.swift */,
 			);
@@ -400,6 +471,7 @@
 				945430D427C60B7A0060EA46 /* UIComponents.storyboard in Resources */,
 				94E9F0DD28113BAE0084AA98 /* UIWidget.storyboard in Resources */,
 				94E9F0E728113BAE0084AA98 /* MyTableViewCell.xib in Resources */,
+				945F5C5F2811586C00F23504 /* NavigationControl.storyboard in Resources */,
 				94850B1127C88C8D0099B3FE /* AutoAdvance.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,24 +499,33 @@
 			files = (
 				94E9F0EC28113BAE0084AA98 /* Practical3ViewController.swift in Sources */,
 				94E9F0DF28113BAE0084AA98 /* MainPageViewController.swift in Sources */,
+				945F5C5D2811586C00F23504 /* Coordinator.swift in Sources */,
 				94A9E099280D85CB00225D41 /* SignUpViewController.swift in Sources */,
 				94E9F0EE28113BAE0084AA98 /* WebViewController.swift in Sources */,
 				94E9F0E328113BAE0084AA98 /* FruitData.swift in Sources */,
+				945F5C5B2811586C00F23504 /* SecondVCCoordinator.swift in Sources */,
+				945F5C642811586C00F23504 /* FirstVC.swift in Sources */,
 				94E9F0EB28113BAE0084AA98 /* HomeViewController.swift in Sources */,
+				945F5C5A2811586C00F23504 /* AppCoordinator.swift in Sources */,
 				94E9F0E828113BAE0084AA98 /* DemoCollectionViewCell.swift in Sources */,
 				9419DD2E278D9A45004730AF /* ViewController.swift in Sources */,
 				94E9F0ED28113BAE0084AA98 /* SwitchStackViewController.swift in Sources */,
 				94E9F0EF28113BAE0084AA98 /* MapsViewController.swift in Sources */,
+				945F5C632811586C00F23504 /* ForthVC.swift in Sources */,
 				94E9F0E028113BAE0084AA98 /* UIWidgetViewController.swift in Sources */,
 				9419DD34278D9A45004730AF /* myapp.xcdatamodeld in Sources */,
 				94E9F0E128113BAE0084AA98 /* Constants.swift in Sources */,
+				945F5C622811586C00F23504 /* GoTo3VC.swift in Sources */,
 				94E9F0E528113BAE0084AA98 /* MyTableViewCell.swift in Sources */,
+				945F5C592811586C00F23504 /* FirstVCCoordinator.swift in Sources */,
 				94E9F0E228113BAE0084AA98 /* UIWidgetMainViewController.swift in Sources */,
 				9419DD2A278D9A45004730AF /* AppDelegate.swift in Sources */,
+				945F5C5C2811586C00F23504 /* MainVCCoordinator.swift in Sources */,
 				94E9F0F028113BAE0084AA98 /* TabsViewController.swift in Sources */,
 				94E9F0DE28113BAE0084AA98 /* SignInTableViewController.swift in Sources */,
 				94E9F0E628113BAE0084AA98 /* MyCollectionViewCell.swift in Sources */,
 				94E9F0E428113BAE0084AA98 /* LocationModel.swift in Sources */,
+				945F5C652811586C00F23504 /* SecondVC.swift in Sources */,
 				9419DD2C278D9A45004730AF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

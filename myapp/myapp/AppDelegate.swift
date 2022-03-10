@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  myapp
-//
-//  Created by Stuti Bhavsar  on 11/01/22.
-//
 
 import UIKit
 import CoreData
