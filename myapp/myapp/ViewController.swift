@@ -40,4 +40,8 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func btnArchitecture(_ sender: UIButton) {
+        coordinator?.openArch()
+    }
 }

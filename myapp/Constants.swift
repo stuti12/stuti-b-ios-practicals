@@ -51,6 +51,16 @@ struct Constants {
     static let hundredSixty = 160
     static let forteen = 14
     static let fortySix = 46
+    static let fourHundredEightySix : Float = 486
+    static let storymvc = "MVCViewTraffic"
+    static let storymvp = "MVP"
+    static let storymvvm = "MVVMLogin"
+    static let storymain = "Main"
+    static let archview = "ArchitectureViewController"
+    static let mvcView = "MVCViewController"
+    static let mvpView = "MVPViewController"
+    static let mvvm = "MVVMViewController"
+    static let second = "SecondViewController"
 }
 
 enum identifier : String{

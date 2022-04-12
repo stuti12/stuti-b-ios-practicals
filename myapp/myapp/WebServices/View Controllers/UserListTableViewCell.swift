@@ -9,7 +9,7 @@ import UIKit
 
 class UserListTableViewCell: UITableViewCell {
     
-    //MARK: IBOutlet
+    //MARK: - IBOutlet
     @IBOutlet weak var ivImageView: UIImageView!
     @IBOutlet weak var lblUserName: UILabel!
     @IBOutlet weak var lblEmail: UILabel!
@@ -20,9 +20,9 @@ class UserListTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
+       
     }
+    //MARK: - function to set Value to cell
     func configureCellValue(name: String, email: String, imageName: URL) {
         DispatchQueue.global().async {
             let imageData = try? Data(contentsOf: imageName)

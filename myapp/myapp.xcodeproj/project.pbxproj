@@ -40,6 +40,24 @@
 		945F5C7D28117B7500F23504 /* APIDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945F5C7428117B7500F23504 /* APIDataClass.swift */; };
 		94850B1127C88C8D0099B3FE /* AutoAdvance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94850B1027C88C8D0099B3FE /* AutoAdvance.storyboard */; };
 		94A9E099280D85CB00225D41 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9E098280D85CB00225D41 /* SignUpViewController.swift */; };
+		94CE34B428126966006F4A7A /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE349028126966006F4A7A /* AuthenticationCoordinator.swift */; };
+		94CE34B628126966006F4A7A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE349228126966006F4A7A /* MainCoordinator.swift */; };
+		94CE34B728126966006F4A7A /* MVPCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE349328126966006F4A7A /* MVPCoordinator.swift */; };
+		94CE34B828126966006F4A7A /* MVCCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE349428126966006F4A7A /* MVCCordinator.swift */; };
+		94CE34BA28126966006F4A7A /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE349828126966006F4A7A /* SignUpPresenter.swift */; };
+		94CE34BB28126966006F4A7A /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE349A28126966006F4A7A /* SignUpModel.swift */; };
+		94CE34BC28126966006F4A7A /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE349C28126966006F4A7A /* MVPViewController.swift */; };
+		94CE34BD28126966006F4A7A /* MVP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CE349D28126966006F4A7A /* MVP.storyboard */; };
+		94CE34BE28126966006F4A7A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE34A028126966006F4A7A /* LoginModel.swift */; };
+		94CE34BF28126966006F4A7A /* MVCViewTraffic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CE34A228126966006F4A7A /* MVCViewTraffic.storyboard */; };
+		94CE34C128126966006F4A7A /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE34A528126966006F4A7A /* MVCViewController.swift */; };
+		94CE34C228126966006F4A7A /* ArchitectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE34A628126966006F4A7A /* ArchitectureViewController.swift */; };
+		94CE34C528126966006F4A7A /* AuthenticationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE34AC28126966006F4A7A /* AuthenticationVM.swift */; };
+		94CE34C628126966006F4A7A /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE34AD28126966006F4A7A /* Dynamic.swift */; };
+		94CE34C728126966006F4A7A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE34AF28126966006F4A7A /* UserModel.swift */; };
+		94CE34C828126966006F4A7A /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE34B128126966006F4A7A /* MVVMViewController.swift */; };
+		94CE34C928126966006F4A7A /* MVVMLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CE34B228126966006F4A7A /* MVVMLogin.storyboard */; };
+		94CE34CA28126966006F4A7A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE34B328126966006F4A7A /* SecondViewController.swift */; };
 		94E9F0DD28113BAE0084AA98 /* UIWidget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E9F0C228113BAE0084AA98 /* UIWidget.storyboard */; };
 		94E9F0DE28113BAE0084AA98 /* SignInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E9F0C428113BAE0084AA98 /* SignInTableViewController.swift */; };
 		94E9F0DF28113BAE0084AA98 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E9F0C528113BAE0084AA98 /* MainPageViewController.swift */; };
@@ -124,6 +142,24 @@
 		945F5C7428117B7500F23504 /* APIDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataClass.swift; sourceTree = "<group>"; };
 		94850B1027C88C8D0099B3FE /* AutoAdvance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoAdvance.storyboard; sourceTree = "<group>"; };
 		94A9E098280D85CB00225D41 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		94CE349028126966006F4A7A /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		94CE349228126966006F4A7A /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		94CE349328126966006F4A7A /* MVPCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPCoordinator.swift; sourceTree = "<group>"; };
+		94CE349428126966006F4A7A /* MVCCordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCCordinator.swift; sourceTree = "<group>"; };
+		94CE349828126966006F4A7A /* SignUpPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		94CE349A28126966006F4A7A /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		94CE349C28126966006F4A7A /* MVPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
+		94CE349D28126966006F4A7A /* MVP.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVP.storyboard; sourceTree = "<group>"; };
+		94CE34A028126966006F4A7A /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		94CE34A228126966006F4A7A /* MVCViewTraffic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVCViewTraffic.storyboard; sourceTree = "<group>"; };
+		94CE34A528126966006F4A7A /* MVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
+		94CE34A628126966006F4A7A /* ArchitectureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchitectureViewController.swift; sourceTree = "<group>"; };
+		94CE34AC28126966006F4A7A /* AuthenticationVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationVM.swift; sourceTree = "<group>"; };
+		94CE34AD28126966006F4A7A /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		94CE34AF28126966006F4A7A /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		94CE34B128126966006F4A7A /* MVVMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		94CE34B228126966006F4A7A /* MVVMLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVVMLogin.storyboard; sourceTree = "<group>"; };
+		94CE34B328126966006F4A7A /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		94E9F0C228113BAE0084AA98 /* UIWidget.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIWidget.storyboard; sourceTree = "<group>"; };
 		94E9F0C428113BAE0084AA98 /* SignInTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTableViewController.swift; sourceTree = "<group>"; };
 		94E9F0C528113BAE0084AA98 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
@@ -188,8 +224,10 @@
 		9419DD1D278D9A45004730AF = {
 			isa = PBXGroup;
 			children = (
+				94CE348E28126966006F4A7A /* Architecture */,
 				945F5C6728117B7500F23504 /* WebServices */,
 				94E9F0C828113BAE0084AA98 /* Constants.swift */,
+				945F5C7228117B7500F23504 /* Localize.strings */,
 				945F5C462811586C00F23504 /* Navigation */,
 				94E9F0BF28113BAE0084AA98 /* UI Widget */,
 				945430D227C60B560060EA46 /* Basic AutoLayout */,
@@ -339,7 +377,6 @@
 		945F5C7028117B7500F23504 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				945F5C7228117B7500F23504 /* Localize.strings */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -350,6 +387,144 @@
 				945F5C7428117B7500F23504 /* APIDataClass.swift */,
 			);
 			path = "Data Class";
+			sourceTree = "<group>";
+		};
+		94CE348E28126966006F4A7A /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				94CE348F28126966006F4A7A /* Coordinators */,
+				94CE349628126966006F4A7A /* MVP */,
+				94CE349E28126966006F4A7A /* MVC */,
+				94CE34A728126966006F4A7A /* Common */,
+				94CE34AA28126966006F4A7A /* MVVM */,
+			);
+			name = Architecture;
+			path = myapp/Architecture;
+			sourceTree = "<group>";
+		};
+		94CE348F28126966006F4A7A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				94CE349028126966006F4A7A /* AuthenticationCoordinator.swift */,
+				94CE349228126966006F4A7A /* MainCoordinator.swift */,
+				94CE349328126966006F4A7A /* MVPCoordinator.swift */,
+				94CE349428126966006F4A7A /* MVCCordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		94CE349628126966006F4A7A /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				94CE349728126966006F4A7A /* Presenter */,
+				94CE349928126966006F4A7A /* Model */,
+				94CE349B28126966006F4A7A /* View */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		94CE349728126966006F4A7A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				94CE349828126966006F4A7A /* SignUpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		94CE349928126966006F4A7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94CE349A28126966006F4A7A /* SignUpModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94CE349B28126966006F4A7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94CE349C28126966006F4A7A /* MVPViewController.swift */,
+				94CE349D28126966006F4A7A /* MVP.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94CE349E28126966006F4A7A /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				94CE349F28126966006F4A7A /* Model */,
+				94CE34A128126966006F4A7A /* VIew */,
+				94CE34A428126966006F4A7A /* Controllers */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		94CE349F28126966006F4A7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94CE34A028126966006F4A7A /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94CE34A128126966006F4A7A /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				94CE34A228126966006F4A7A /* MVCViewTraffic.storyboard */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		94CE34A428126966006F4A7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				94CE34A528126966006F4A7A /* MVCViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		94CE34A728126966006F4A7A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				94CE34A628126966006F4A7A /* ArchitectureViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		94CE34AA28126966006F4A7A /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				94CE34AB28126966006F4A7A /* ViewModel */,
+				94CE34AE28126966006F4A7A /* Model */,
+				94CE34B028126966006F4A7A /* View */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		94CE34AB28126966006F4A7A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				94CE34AC28126966006F4A7A /* AuthenticationVM.swift */,
+				94CE34AD28126966006F4A7A /* Dynamic.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		94CE34AE28126966006F4A7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94CE34AF28126966006F4A7A /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94CE34B028126966006F4A7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94CE34B128126966006F4A7A /* MVVMViewController.swift */,
+				94CE34B228126966006F4A7A /* MVVMLogin.storyboard */,
+				94CE34B328126966006F4A7A /* SecondViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		94E9F0BF28113BAE0084AA98 /* UI Widget */ = {
@@ -581,7 +756,10 @@
 				945F5C7528117B7500F23504 /* WebService.storyboard in Resources */,
 				945430D427C60B7A0060EA46 /* UIComponents.storyboard in Resources */,
 				94E9F0DD28113BAE0084AA98 /* UIWidget.storyboard in Resources */,
+				94CE34BD28126966006F4A7A /* MVP.storyboard in Resources */,
+				94CE34C928126966006F4A7A /* MVVMLogin.storyboard in Resources */,
 				94E9F0E728113BAE0084AA98 /* MyTableViewCell.xib in Resources */,
+				94CE34BF28126966006F4A7A /* MVCViewTraffic.storyboard in Resources */,
 				945F5C5F2811586C00F23504 /* NavigationControl.storyboard in Resources */,
 				94850B1127C88C8D0099B3FE /* AutoAdvance.storyboard in Resources */,
 				945F5C7C28117B7500F23504 /* Localize.strings in Resources */,
@@ -718,36 +896,51 @@
 				94A9E099280D85CB00225D41 /* SignUpViewController.swift in Sources */,
 				94E9F0EE28113BAE0084AA98 /* WebViewController.swift in Sources */,
 				94E9F0E328113BAE0084AA98 /* FruitData.swift in Sources */,
+				94CE34BA28126966006F4A7A /* SignUpPresenter.swift in Sources */,
+				94CE34C528126966006F4A7A /* AuthenticationVM.swift in Sources */,
+				94CE34C128126966006F4A7A /* MVCViewController.swift in Sources */,
 				945F5C5B2811586C00F23504 /* SecondVCCoordinator.swift in Sources */,
+				94CE34B828126966006F4A7A /* MVCCordinator.swift in Sources */,
 				945F5C642811586C00F23504 /* FirstVC.swift in Sources */,
 				94E9F0EB28113BAE0084AA98 /* HomeViewController.swift in Sources */,
+				94CE34C628126966006F4A7A /* Dynamic.swift in Sources */,
+				94CE34C828126966006F4A7A /* MVVMViewController.swift in Sources */,
+				94CE34BC28126966006F4A7A /* MVPViewController.swift in Sources */,
 				945F5C5A2811586C00F23504 /* AppCoordinator.swift in Sources */,
+				94CE34BE28126966006F4A7A /* LoginModel.swift in Sources */,
+				94CE34B628126966006F4A7A /* MainCoordinator.swift in Sources */,
 				94E9F0E828113BAE0084AA98 /* DemoCollectionViewCell.swift in Sources */,
 				945F5C7628117B7500F23504 /* WebServiceViewController.swift in Sources */,
 				9419DD2E278D9A45004730AF /* ViewController.swift in Sources */,
 				94E9F0ED28113BAE0084AA98 /* SwitchStackViewController.swift in Sources */,
 				94E9F0EF28113BAE0084AA98 /* MapsViewController.swift in Sources */,
 				945F5C7728117B7500F23504 /* UserDataViewController.swift in Sources */,
+				94CE34BB28126966006F4A7A /* SignUpModel.swift in Sources */,
 				945F5C632811586C00F23504 /* ForthVC.swift in Sources */,
 				945F5C7D28117B7500F23504 /* APIDataClass.swift in Sources */,
 				94E9F0E028113BAE0084AA98 /* UIWidgetViewController.swift in Sources */,
 				945F5C7928117B7500F23504 /* AddUser.swift in Sources */,
+				94CE34CA28126966006F4A7A /* SecondViewController.swift in Sources */,
 				9419DD34278D9A45004730AF /* myapp.xcdatamodeld in Sources */,
 				945F5C7A28117B7500F23504 /* UserListTableViewCell.swift in Sources */,
 				94E9F0E128113BAE0084AA98 /* Constants.swift in Sources */,
+				94CE34B428126966006F4A7A /* AuthenticationCoordinator.swift in Sources */,
 				945F5C622811586C00F23504 /* GoTo3VC.swift in Sources */,
 				94E9F0E528113BAE0084AA98 /* MyTableViewCell.swift in Sources */,
 				945F5C592811586C00F23504 /* FirstVCCoordinator.swift in Sources */,
 				94E9F0E228113BAE0084AA98 /* UIWidgetMainViewController.swift in Sources */,
 				9419DD2A278D9A45004730AF /* AppDelegate.swift in Sources */,
+				94CE34B728126966006F4A7A /* MVPCoordinator.swift in Sources */,
 				945F5C5C2811586C00F23504 /* MainVCCoordinator.swift in Sources */,
 				945F5C7828117B7500F23504 /* SingleUser.swift in Sources */,
+				94CE34C228126966006F4A7A /* ArchitectureViewController.swift in Sources */,
 				94E9F0F028113BAE0084AA98 /* TabsViewController.swift in Sources */,
 				94E9F0DE28113BAE0084AA98 /* SignInTableViewController.swift in Sources */,
 				94E9F0E628113BAE0084AA98 /* MyCollectionViewCell.swift in Sources */,
 				94E9F0E428113BAE0084AA98 /* LocationModel.swift in Sources */,
 				945F5C652811586C00F23504 /* SecondVC.swift in Sources */,
 				9419DD2C278D9A45004730AF /* SceneDelegate.swift in Sources */,
+				94CE34C728126966006F4A7A /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
