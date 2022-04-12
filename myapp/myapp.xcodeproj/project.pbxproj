@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9400D73E28053AAE00577F89 /* MVCViewTraffic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9400D73D28053AAE00577F89 /* MVCViewTraffic.storyboard */; };
+		9400D74028053ADE00577F89 /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400D73F28053ADE00577F89 /* MVCViewController.swift */; };
+		9400D742280541BD00577F89 /* CircleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400D741280541BD00577F89 /* CircleLabel.swift */; };
 		9419DD2A278D9A45004730AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD29278D9A45004730AF /* AppDelegate.swift */; };
 		9419DD2C278D9A45004730AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD2B278D9A45004730AF /* SceneDelegate.swift */; };
 		9419DD2E278D9A45004730AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD2D278D9A45004730AF /* ViewController.swift */; };
@@ -17,6 +20,23 @@
 		9419DD44278D9A48004730AF /* myappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD43278D9A48004730AF /* myappTests.swift */; };
 		9419DD4E278D9A48004730AF /* myappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD4D278D9A48004730AF /* myappUITests.swift */; };
 		9419DD50278D9A48004730AF /* myappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD4F278D9A48004730AF /* myappUITestsLaunchTests.swift */; };
+		942C90CB280581F2002CDDB1 /* MVP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942C90CA280581F2002CDDB1 /* MVP.storyboard */; };
+		94960D75280813D200EE1431 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94960D74280813D200EE1431 /* Coordinator.swift */; };
+		94960D77280813EE00EE1431 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94960D76280813EE00EE1431 /* AppCoordinator.swift */; };
+		94960D792808145400EE1431 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94960D782808145400EE1431 /* AuthenticationCoordinator.swift */; };
+		94960D7B2808157900EE1431 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94960D7A2808157900EE1431 /* SecondViewController.swift */; };
+		94960D7D2808211500EE1431 /* MVPCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94960D7C2808211500EE1431 /* MVPCoordinator.swift */; };
+		94960D7F2808212500EE1431 /* MVCCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94960D7E2808212500EE1431 /* MVCCordinator.swift */; };
+		94960D83280829EE00EE1431 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94960D82280829EE00EE1431 /* MainCoordinator.swift */; };
+		9498CA8D2806904600EDA300 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498CA8C2806904600EDA300 /* LoginModel.swift */; };
+		9498CA8F28069E1B00EDA300 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498CA8E28069E1B00EDA300 /* SignUpPresenter.swift */; };
+		9498CA9128069E4000EDA300 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498CA9028069E4000EDA300 /* SignUpModel.swift */; };
+		9498CA9328069F1700EDA300 /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498CA9228069F1700EDA300 /* MVPViewController.swift */; };
+		9498CA982806C65400EDA300 /* MVVMLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9498CA972806C65400EDA300 /* MVVMLogin.storyboard */; };
+		9498CA9B2806C6D400EDA300 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498CA9A2806C6D400EDA300 /* UserModel.swift */; };
+		9498CA9D2806C70800EDA300 /* AuthenticationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498CA9C2806C70800EDA300 /* AuthenticationVM.swift */; };
+		9498CA9F2806C94200EDA300 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498CA9E2806C94200EDA300 /* MVVMViewController.swift */; };
+		94A7B4F2280577BA001CBC80 /* ArchitectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A7B4F1280577BA001CBC80 /* ArchitectureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9400D73D28053AAE00577F89 /* MVCViewTraffic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVCViewTraffic.storyboard; sourceTree = "<group>"; };
+		9400D73F28053ADE00577F89 /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
+		9400D741280541BD00577F89 /* CircleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLabel.swift; sourceTree = "<group>"; };
 		9419DD26278D9A45004730AF /* myapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9419DD29278D9A45004730AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9419DD2B278D9A45004730AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +74,23 @@
 		9419DD49278D9A48004730AF /* myappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9419DD4D278D9A48004730AF /* myappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myappUITests.swift; sourceTree = "<group>"; };
 		9419DD4F278D9A48004730AF /* myappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		942C90CA280581F2002CDDB1 /* MVP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVP.storyboard; sourceTree = "<group>"; };
+		94960D74280813D200EE1431 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		94960D76280813EE00EE1431 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		94960D782808145400EE1431 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		94960D7A2808157900EE1431 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		94960D7C2808211500EE1431 /* MVPCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPCoordinator.swift; sourceTree = "<group>"; };
+		94960D7E2808212500EE1431 /* MVCCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCCordinator.swift; sourceTree = "<group>"; };
+		94960D82280829EE00EE1431 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		9498CA8C2806904600EDA300 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		9498CA8E28069E1B00EDA300 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		9498CA9028069E4000EDA300 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		9498CA9228069F1700EDA300 /* MVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
+		9498CA972806C65400EDA300 /* MVVMLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVVMLogin.storyboard; sourceTree = "<group>"; };
+		9498CA9A2806C6D400EDA300 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		9498CA9C2806C70800EDA300 /* AuthenticationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVM.swift; sourceTree = "<group>"; };
+		9498CA9E2806C94200EDA300 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		94A7B4F1280577BA001CBC80 /* ArchitectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +118,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9400D7382805392400577F89 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				9412116F280846120049EA5C /* Coordinators */,
+				9498CA942806C39F00EDA300 /* MVVM */,
+				942C90C0280580F0002CDDB1 /* MVP */,
+				9400D7392805393D00577F89 /* MVC */,
+				94A7B4F1280577BA001CBC80 /* ArchitectureViewController.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		9400D7392805393D00577F89 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				9400D73C2805395F00577F89 /* Controllers */,
+				9400D73B2805395600577F89 /* VIew */,
+				9400D73A2805394D00577F89 /* Model */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		9400D73A2805394D00577F89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9498CA8C2806904600EDA300 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9400D73B2805395600577F89 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				9400D73D28053AAE00577F89 /* MVCViewTraffic.storyboard */,
+				9400D741280541BD00577F89 /* CircleLabel.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		9400D73C2805395F00577F89 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9400D73F28053ADE00577F89 /* MVCViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9412116F280846120049EA5C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				94960D7E2808212500EE1431 /* MVCCordinator.swift */,
+				94960D782808145400EE1431 /* AuthenticationCoordinator.swift */,
+				94960D82280829EE00EE1431 /* MainCoordinator.swift */,
+				94960D76280813EE00EE1431 /* AppCoordinator.swift */,
+				94960D74280813D200EE1431 /* Coordinator.swift */,
+				94960D7C2808211500EE1431 /* MVPCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		9419DD1D278D9A45004730AF = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +201,7 @@
 		9419DD28278D9A45004730AF /* myapp */ = {
 			isa = PBXGroup;
 			children = (
+				9400D7382805392400577F89 /* Architecture */,
 				9419DD29278D9A45004730AF /* AppDelegate.swift */,
 				9419DD2B278D9A45004730AF /* SceneDelegate.swift */,
 				9419DD2D278D9A45004730AF /* ViewController.swift */,
@@ -128,6 +229,77 @@
 				9419DD4F278D9A48004730AF /* myappUITestsLaunchTests.swift */,
 			);
 			path = myappUITests;
+			sourceTree = "<group>";
+		};
+		942C90C0280580F0002CDDB1 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				942C90D42805A06D002CDDB1 /* Model */,
+				942C90C32805810B002CDDB1 /* Presenter */,
+				942C90C228058102002CDDB1 /* View */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		942C90C228058102002CDDB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				942C90CA280581F2002CDDB1 /* MVP.storyboard */,
+				9498CA9228069F1700EDA300 /* MVPViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		942C90C32805810B002CDDB1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9498CA8E28069E1B00EDA300 /* SignUpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		942C90D42805A06D002CDDB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9498CA9028069E4000EDA300 /* SignUpModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9498CA942806C39F00EDA300 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				9498CA992806C6AF00EDA300 /* ViewModel */,
+				9498CA962806C3B100EDA300 /* View */,
+				9498CA952806C3A800EDA300 /* Model */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		9498CA952806C3A800EDA300 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9498CA9A2806C6D400EDA300 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9498CA962806C3B100EDA300 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9498CA972806C65400EDA300 /* MVVMLogin.storyboard */,
+				9498CA9E2806C94200EDA300 /* MVVMViewController.swift */,
+				94960D7A2808157900EE1431 /* SecondViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9498CA992806C6AF00EDA300 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9498CA9C2806C70800EDA300 /* AuthenticationVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +406,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9498CA982806C65400EDA300 /* MVVMLogin.storyboard in Resources */,
+				942C90CB280581F2002CDDB1 /* MVP.storyboard in Resources */,
+				9400D73E28053AAE00577F89 /* MVCViewTraffic.storyboard in Resources */,
 				9419DD39278D9A48004730AF /* LaunchScreen.storyboard in Resources */,
 				9419DD36278D9A48004730AF /* Assets.xcassets in Resources */,
 				9419DD31278D9A45004730AF /* Main.storyboard in Resources */,
@@ -261,10 +436,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9498CA9128069E4000EDA300 /* SignUpModel.swift in Sources */,
+				94960D83280829EE00EE1431 /* MainCoordinator.swift in Sources */,
+				9400D74028053ADE00577F89 /* MVCViewController.swift in Sources */,
+				94960D75280813D200EE1431 /* Coordinator.swift in Sources */,
+				94A7B4F2280577BA001CBC80 /* ArchitectureViewController.swift in Sources */,
+				94960D77280813EE00EE1431 /* AppCoordinator.swift in Sources */,
+				94960D7F2808212500EE1431 /* MVCCordinator.swift in Sources */,
 				9419DD2E278D9A45004730AF /* ViewController.swift in Sources */,
+				9498CA8F28069E1B00EDA300 /* SignUpPresenter.swift in Sources */,
+				9498CA9D2806C70800EDA300 /* AuthenticationVM.swift in Sources */,
 				9419DD34278D9A45004730AF /* myapp.xcdatamodeld in Sources */,
+				9498CA8D2806904600EDA300 /* LoginModel.swift in Sources */,
+				9498CA9B2806C6D400EDA300 /* UserModel.swift in Sources */,
 				9419DD2A278D9A45004730AF /* AppDelegate.swift in Sources */,
+				94960D7B2808157900EE1431 /* SecondViewController.swift in Sources */,
+				9498CA9328069F1700EDA300 /* MVPViewController.swift in Sources */,
+				9498CA9F2806C94200EDA300 /* MVVMViewController.swift in Sources */,
+				9400D742280541BD00577F89 /* CircleLabel.swift in Sources */,
+				94960D7D2808211500EE1431 /* MVPCoordinator.swift in Sources */,
 				9419DD2C278D9A45004730AF /* SceneDelegate.swift in Sources */,
+				94960D792808145400EE1431 /* AuthenticationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
