@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9400D73E28053AAE00577F89 /* MVCViewTraffic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9400D73D28053AAE00577F89 /* MVCViewTraffic.storyboard */; };
 		9400D74028053ADE00577F89 /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400D73F28053ADE00577F89 /* MVCViewController.swift */; };
-		9400D742280541BD00577F89 /* CircleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400D741280541BD00577F89 /* CircleLabel.swift */; };
 		9419DD2A278D9A45004730AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD29278D9A45004730AF /* AppDelegate.swift */; };
 		9419DD2C278D9A45004730AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD2B278D9A45004730AF /* SceneDelegate.swift */; };
 		9419DD2E278D9A45004730AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD2D278D9A45004730AF /* ViewController.swift */; };
@@ -37,6 +36,7 @@
 		9498CA9D2806C70800EDA300 /* AuthenticationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498CA9C2806C70800EDA300 /* AuthenticationVM.swift */; };
 		9498CA9F2806C94200EDA300 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498CA9E2806C94200EDA300 /* MVVMViewController.swift */; };
 		94A7B4F2280577BA001CBC80 /* ArchitectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A7B4F1280577BA001CBC80 /* ArchitectureViewController.swift */; };
+		94A9E097280D73EB00225D41 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9E096280D73EB00225D41 /* BindingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,6 @@
 /* Begin PBXFileReference section */
 		9400D73D28053AAE00577F89 /* MVCViewTraffic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVCViewTraffic.storyboard; sourceTree = "<group>"; };
 		9400D73F28053ADE00577F89 /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
-		9400D741280541BD00577F89 /* CircleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLabel.swift; sourceTree = "<group>"; };
 		9419DD26278D9A45004730AF /* myapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9419DD29278D9A45004730AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9419DD2B278D9A45004730AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		9498CA9C2806C70800EDA300 /* AuthenticationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVM.swift; sourceTree = "<group>"; };
 		9498CA9E2806C94200EDA300 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		94A7B4F1280577BA001CBC80 /* ArchitectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureViewController.swift; sourceTree = "<group>"; };
+		94A9E096280D73EB00225D41 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				9400D73D28053AAE00577F89 /* MVCViewTraffic.storyboard */,
-				9400D741280541BD00577F89 /* CircleLabel.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -290,6 +289,7 @@
 				9498CA972806C65400EDA300 /* MVVMLogin.storyboard */,
 				9498CA9E2806C94200EDA300 /* MVVMViewController.swift */,
 				94960D7A2808157900EE1431 /* SecondViewController.swift */,
+				94A9E096280D73EB00225D41 /* BindingTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -453,9 +453,9 @@
 				94960D7B2808157900EE1431 /* SecondViewController.swift in Sources */,
 				9498CA9328069F1700EDA300 /* MVPViewController.swift in Sources */,
 				9498CA9F2806C94200EDA300 /* MVVMViewController.swift in Sources */,
-				9400D742280541BD00577F89 /* CircleLabel.swift in Sources */,
 				94960D7D2808211500EE1431 /* MVPCoordinator.swift in Sources */,
 				9419DD2C278D9A45004730AF /* SceneDelegate.swift in Sources */,
+				94A9E097280D73EB00225D41 /* BindingTextField.swift in Sources */,
 				94960D792808145400EE1431 /* AuthenticationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,6 @@ class MVCViewController: UIViewController {
     var data: Login?
     @IBOutlet weak var tfEmail: UITextField!
     
-    @IBOutlet weak var lblLogin: CircleLabel!
     @IBOutlet weak var tfPassword: UITextField!
     var coordinator: MVCCoordinator?
     //MARK: Lifecycle
@@ -35,7 +34,7 @@ class MVCViewController: UIViewController {
         else {
             data = Login(email: tfEmail.text ?? "no data", pswd: tfPassword.text ?? "no data")
             showAlertBox(message: "Email: \(data?.email ?? "No data") \n Password:\(data?.pswd ?? "No password")" )
-            lblLogin.text = "Logged in Successfully"
+           
         }
     }
     
