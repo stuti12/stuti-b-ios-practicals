@@ -9,6 +9,7 @@ import Foundation
 class AuthenticationVM {
     var user: User?
     var userName: String{return user?.userName ?? "no username"}
+    
     var email: String {
         return user?.email ?? "no email"
     }

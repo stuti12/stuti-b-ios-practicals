@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9400D73E28053AAE00577F89 /* MVCViewTraffic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9400D73D28053AAE00577F89 /* MVCViewTraffic.storyboard */; };
 		9400D74028053ADE00577F89 /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400D73F28053ADE00577F89 /* MVCViewController.swift */; };
+		94102DCF280EC1EB007F1390 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94102DCE280EC1EB007F1390 /* Dynamic.swift */; };
 		9419DD2A278D9A45004730AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD29278D9A45004730AF /* AppDelegate.swift */; };
 		9419DD2C278D9A45004730AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD2B278D9A45004730AF /* SceneDelegate.swift */; };
 		9419DD2E278D9A45004730AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419DD2D278D9A45004730AF /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		9400D73D28053AAE00577F89 /* MVCViewTraffic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVCViewTraffic.storyboard; sourceTree = "<group>"; };
 		9400D73F28053ADE00577F89 /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
+		94102DCE280EC1EB007F1390 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		9419DD26278D9A45004730AF /* myapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9419DD29278D9A45004730AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9419DD2B278D9A45004730AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				9498CA9C2806C70800EDA300 /* AuthenticationVM.swift */,
+				94102DCE280EC1EB007F1390 /* Dynamic.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				94A7B4F2280577BA001CBC80 /* ArchitectureViewController.swift in Sources */,
 				94960D77280813EE00EE1431 /* AppCoordinator.swift in Sources */,
 				94960D7F2808212500EE1431 /* MVCCordinator.swift in Sources */,
+				94102DCF280EC1EB007F1390 /* Dynamic.swift in Sources */,
 				9419DD2E278D9A45004730AF /* ViewController.swift in Sources */,
 				9498CA8F28069E1B00EDA300 /* SignUpPresenter.swift in Sources */,
 				9498CA9D2806C70800EDA300 /* AuthenticationVM.swift in Sources */,
