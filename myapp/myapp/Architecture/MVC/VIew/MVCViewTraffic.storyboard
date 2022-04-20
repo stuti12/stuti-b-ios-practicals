@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j70-ua-fja">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,14 +14,14 @@
             <objects>
                 <viewController storyboardIdentifier="MVCViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gSo-yX-4KH" customClass="MVCViewController" customModule="myapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ikB-Nc-zLc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yV0-09-D5f">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FVd-VZ-t3P">
-                                        <rect key="frame" x="30" y="80" width="354" height="28.5"/>
+                                        <rect key="frame" x="10" y="42.5" width="300" height="28.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                         <connections>
@@ -29,7 +29,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T3L-bx-k4H">
-                                        <rect key="frame" x="30" y="144" width="354" height="27"/>
+                                        <rect key="frame" x="10" y="119" width="300" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                         <connections>
@@ -37,7 +37,7 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdH-6j-LFj">
-                                        <rect key="frame" x="30" y="221.5" width="354" height="31"/>
+                                        <rect key="frame" x="10" y="196.5" width="300" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Login" cornerStyle="dynamic">
                                             <backgroundConfiguration key="background" cornerRadius="4">
@@ -49,13 +49,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz0-Ls-27W" customClass="CircleLabel" customModule="myapp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="329.5" width="354" height="0.0"/>
+                                        <rect key="frame" x="10" y="304.5" width="300" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd2-Vm-M5t">
-                                        <rect key="frame" x="30" y="34" width="354" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd2-Vm-M5t">
+                                        <rect key="frame" x="139" y="0.0" width="42" height="57"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -63,20 +63,23 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="xd2-Vm-M5t" firstAttribute="centerY" secondItem="yV0-09-D5f" secondAttribute="centerY" multiplier="0.1" id="85a-FM-tmV"/>
                                     <constraint firstItem="Pz0-Ls-27W" firstAttribute="top" secondItem="hdH-6j-LFj" secondAttribute="bottom" constant="77" id="8rC-ze-wiP"/>
-                                    <constraint firstAttribute="trailing" secondItem="FVd-VZ-t3P" secondAttribute="trailing" constant="30" id="AeO-iU-ZSW"/>
+                                    <constraint firstItem="FVd-VZ-t3P" firstAttribute="centerY" secondItem="yV0-09-D5f" secondAttribute="centerY" multiplier="0.2" id="A3d-X0-FXl"/>
+                                    <constraint firstItem="xd2-Vm-M5t" firstAttribute="centerX" secondItem="yV0-09-D5f" secondAttribute="centerX" id="DNj-Y3-dVv"/>
                                     <constraint firstItem="Pz0-Ls-27W" firstAttribute="leading" secondItem="hdH-6j-LFj" secondAttribute="leading" id="FK4-Cw-b5H"/>
-                                    <constraint firstItem="T3L-bx-k4H" firstAttribute="leading" secondItem="FVd-VZ-t3P" secondAttribute="leading" id="Lcj-4P-3hQ"/>
-                                    <constraint firstItem="hdH-6j-LFj" firstAttribute="leading" secondItem="T3L-bx-k4H" secondAttribute="leading" id="LwK-Ra-tgx"/>
-                                    <constraint firstItem="FVd-VZ-t3P" firstAttribute="top" secondItem="xd2-Vm-M5t" secondAttribute="bottom" constant="25" id="NUc-Ef-hYG"/>
-                                    <constraint firstItem="hdH-6j-LFj" firstAttribute="trailing" secondItem="T3L-bx-k4H" secondAttribute="trailing" id="R4y-Tb-2Df"/>
-                                    <constraint firstItem="T3L-bx-k4H" firstAttribute="top" secondItem="FVd-VZ-t3P" secondAttribute="bottom" constant="35.5" id="WI4-1T-fHF"/>
-                                    <constraint firstItem="xd2-Vm-M5t" firstAttribute="top" secondItem="yV0-09-D5f" secondAttribute="top" constant="34" id="XAX-L0-NCQ"/>
-                                    <constraint firstItem="hdH-6j-LFj" firstAttribute="top" secondItem="T3L-bx-k4H" secondAttribute="bottom" constant="50.5" id="XuW-sB-AWm"/>
-                                    <constraint firstItem="T3L-bx-k4H" firstAttribute="trailing" secondItem="FVd-VZ-t3P" secondAttribute="trailing" id="Y0P-cS-L5W"/>
-                                    <constraint firstItem="FVd-VZ-t3P" firstAttribute="leading" secondItem="yV0-09-D5f" secondAttribute="leading" constant="30" id="a61-Kk-RTM"/>
-                                    <constraint firstItem="xd2-Vm-M5t" firstAttribute="leading" secondItem="yV0-09-D5f" secondAttribute="leading" constant="30" id="dIL-Xb-oiw"/>
-                                    <constraint firstAttribute="trailing" secondItem="xd2-Vm-M5t" secondAttribute="trailing" constant="30" id="fef-kc-qah"/>
+                                    <constraint firstItem="hdH-6j-LFj" firstAttribute="width" secondItem="T3L-bx-k4H" secondAttribute="width" id="M98-GJ-3SG"/>
+                                    <constraint firstItem="T3L-bx-k4H" firstAttribute="trailing" secondItem="FVd-VZ-t3P" secondAttribute="trailing" id="MSR-wL-AVq"/>
+                                    <constraint firstItem="T3L-bx-k4H" firstAttribute="height" secondItem="FVd-VZ-t3P" secondAttribute="height" multiplier="0.947368" id="POC-d8-xaj"/>
+                                    <constraint firstItem="hdH-6j-LFj" firstAttribute="top" secondItem="T3L-bx-k4H" secondAttribute="bottom" constant="50.5" id="TwW-Xv-n5B"/>
+                                    <constraint firstItem="xd2-Vm-M5t" firstAttribute="top" secondItem="yV0-09-D5f" secondAttribute="top" id="XAX-L0-NCQ"/>
+                                    <constraint firstItem="FVd-VZ-t3P" firstAttribute="centerX" secondItem="yV0-09-D5f" secondAttribute="centerX" id="a7r-aU-Sj9"/>
+                                    <constraint firstItem="hdH-6j-LFj" firstAttribute="leading" secondItem="T3L-bx-k4H" secondAttribute="leading" id="bg3-l2-IIx"/>
+                                    <constraint firstItem="hdH-6j-LFj" firstAttribute="trailing" secondItem="T3L-bx-k4H" secondAttribute="trailing" id="fyD-dg-SVY"/>
+                                    <constraint firstItem="T3L-bx-k4H" firstAttribute="top" secondItem="FVd-VZ-t3P" secondAttribute="bottom" constant="48" id="on8-0H-xtH"/>
+                                    <constraint firstItem="hdH-6j-LFj" firstAttribute="height" secondItem="T3L-bx-k4H" secondAttribute="height" multiplier="1.14815" id="r0V-wo-5Sb"/>
+                                    <constraint firstItem="T3L-bx-k4H" firstAttribute="width" secondItem="FVd-VZ-t3P" secondAttribute="width" id="szY-86-qxw"/>
+                                    <constraint firstAttribute="trailing" secondItem="FVd-VZ-t3P" secondAttribute="trailing" constant="10" id="zGb-YK-L15"/>
                                     <constraint firstItem="Pz0-Ls-27W" firstAttribute="trailing" secondItem="hdH-6j-LFj" secondAttribute="trailing" id="zVo-pw-5XM"/>
                                 </constraints>
                             </view>
@@ -105,11 +108,11 @@
             <objects>
                 <viewController storyboardIdentifier="ArchitectureViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t3S-VU-lB7" customClass="ArchitectureViewController" customModule="myapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="son-Ok-FHA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbo-l6-J8X">
-                                <rect key="frame" x="173.5" y="157" width="67" height="31"/>
+                                <rect key="frame" x="126.5" y="113" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="MVC" cornerStyle="dynamic">
                                     <backgroundConfiguration key="background">
@@ -121,7 +124,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GH-dZ-EcK">
-                                <rect key="frame" x="173.5" y="231" width="67" height="31"/>
+                                <rect key="frame" x="126.5" y="187" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="MVP" cornerStyle="dynamic">
                                     <backgroundConfiguration key="background">
@@ -133,7 +136,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnc-uD-anJ">
-                                <rect key="frame" x="173.5" y="298" width="67" height="31"/>
+                                <rect key="frame" x="126.5" y="254" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="MVVM" cornerStyle="dynamic">
                                     <backgroundConfiguration key="background">
@@ -170,7 +173,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="j70-ua-fja" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QS7-93-1Rr">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

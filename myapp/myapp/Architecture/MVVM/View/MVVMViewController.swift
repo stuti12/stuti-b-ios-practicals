@@ -9,17 +9,14 @@ import UIKit
 
 class MVVMViewController: UIViewController {
     //MARK: IBOutlet
-    private var userModel: UserModel?
-   
-    @IBOutlet weak var tfEmail: BindingTextBox! {
-    didSet {
-        tfEmail.bind { self.userModel?.email = $0}
-    }
-    }
+    @IBOutlet weak var tfEmail: UITextField!
     
     @IBOutlet weak var tfpassword: UITextField!
     var coordinator: AuthenticationCoordinator?
+    private var userModel: UserModel?
+    
     var authenticationVM = AuthenticationVM()
+    
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +41,7 @@ class MVVMViewController: UIViewController {
             if status{
                 self.coordinator?.goTOSecondVC(strName: "Welcome \(self.tfEmail.text ?? "no")")
                 self.showAlertBox(message: "User Logged in with  userName \n \( self.authenticationVM.userName) & Email \(self.authenticationVM.email)")
-                print(self.userModel)
+               
             }
             else {
                 self.showAlertBox(message: message)

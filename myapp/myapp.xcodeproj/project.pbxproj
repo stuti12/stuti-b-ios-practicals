@@ -37,7 +37,6 @@
 		9498CA9D2806C70800EDA300 /* AuthenticationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498CA9C2806C70800EDA300 /* AuthenticationVM.swift */; };
 		9498CA9F2806C94200EDA300 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498CA9E2806C94200EDA300 /* MVVMViewController.swift */; };
 		94A7B4F2280577BA001CBC80 /* ArchitectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A7B4F1280577BA001CBC80 /* ArchitectureViewController.swift */; };
-		94A9E097280D73EB00225D41 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A9E096280D73EB00225D41 /* BindingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +91,6 @@
 		9498CA9C2806C70800EDA300 /* AuthenticationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVM.swift; sourceTree = "<group>"; };
 		9498CA9E2806C94200EDA300 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		94A7B4F1280577BA001CBC80 /* ArchitectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureViewController.swift; sourceTree = "<group>"; };
-		94A9E096280D73EB00225D41 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,7 +289,6 @@
 				9498CA972806C65400EDA300 /* MVVMLogin.storyboard */,
 				9498CA9E2806C94200EDA300 /* MVVMViewController.swift */,
 				94960D7A2808157900EE1431 /* SecondViewController.swift */,
-				94A9E096280D73EB00225D41 /* BindingTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -459,7 +456,6 @@
 				9498CA9F2806C94200EDA300 /* MVVMViewController.swift in Sources */,
 				94960D7D2808211500EE1431 /* MVPCoordinator.swift in Sources */,
 				9419DD2C278D9A45004730AF /* SceneDelegate.swift in Sources */,
-				94A9E097280D73EB00225D41 /* BindingTextField.swift in Sources */,
 				94960D792808145400EE1431 /* AuthenticationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
