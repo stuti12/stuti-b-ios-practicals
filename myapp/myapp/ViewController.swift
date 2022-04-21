@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     
     var coordinator: MainCoordinator?
     
-    
     //MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +23,7 @@ class ViewController: UIViewController {
             
         }
     }
-    //MARK: IB ACtions
+    //MARK: - IB ACtions
     
     @IBAction func goToUIWidgetVC(_ sender: UIButton) {
         performSegue(withIdentifier: Constants.MainViewController, sender: self)
@@ -32,5 +31,13 @@ class ViewController: UIViewController {
     
     @IBAction func btnNavigation(_ sender: UIButton) {
         coordinator?.openFirstVC()
+    }
+    
+    @IBAction func btnWebApi(_ sender: Any) {
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == Constants.webService {
+                guard segue.destination is WebServiceViewController else { return }
+            }
+        }
     }
 }
