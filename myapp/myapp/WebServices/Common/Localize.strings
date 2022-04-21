@@ -1,0 +1,19 @@
+/* 
+  Localize.strings
+  myapp
+
+  Created by Stuti Bhavsar  on 21/04/22.
+  
+*/
+"Logged In Successful" = "Logged In Successful";
+"Content-Type" = "Content-Type";
+"List Users" = "List Users";
+"name" = "name";
+"job" = "job";
+"Enter Email & Password" = "Enter Email & Password";
+"Enter Proper Data" = "Enter Proper Data";
+"Enter Mandatory data" = "Enter Mandatory data";
+"Login Failed" = "Login Failed";
+"loading..." = "loading...";
+"SELF MATCHES %@" = "SELF MATCHES %@";
+"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}" = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}";

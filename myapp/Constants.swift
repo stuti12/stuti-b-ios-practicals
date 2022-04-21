@@ -34,4 +34,25 @@ struct Constants {
     static let zero: Int = 0
     static let one: Int = 1
     static let twenty: Int = 20
+    static let webService = "goToWebService"
+    static let url: String = "https://reqres.in/api/"
+    static let dataview = "UserDataViewController"
+    static let method = "GET"
+    static let methodPost  = "POST"
+    static let single = "SingleUser"
+    static let type = "application/json"
+    static let userCell = "userListTableViewCell"
+    static let email = "SELF MATCHES %@"
+    static let email2 = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+    static let responseCode = 201
+    static let noResponse = 200
+    static let fifty = 50
+    static let fifteen = 15
+    static let hundredSixty = 160
+    static let forteen = 14
+    static let fortySix = 46
+}
+
+enum identifier : String{
+   case emailFormat  = "SELF MATCHES %@[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
 }
