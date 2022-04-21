@@ -50,12 +50,29 @@
                                                     <segue destination="JKK-Df-Q0V" kind="show" id="jB4-qG-nxz"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzK-lX-fqn">
+                                                <rect key="frame" x="32" y="147" width="256" height="45"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Ch-3(UI Widget)">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="strokeColor" name="AccentColor"/>
+                                                    </backgroundConfiguration>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="qdh-l9-BeB" kind="show" id="t81-bb-yhZ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="G70-L3-BEE" firstAttribute="trailing" secondItem="MBD-hn-Wtf" secondAttribute="trailing" id="4sa-Kp-N3z"/>
                                             <constraint firstItem="G70-L3-BEE" firstAttribute="top" secondItem="MBD-hn-Wtf" secondAttribute="bottom" constant="20" id="9UX-xy-8aJ"/>
+                                            <constraint firstItem="xzK-lX-fqn" firstAttribute="trailing" secondItem="G70-L3-BEE" secondAttribute="trailing" id="G0x-Hw-2uZ"/>
+                                            <constraint firstItem="xzK-lX-fqn" firstAttribute="width" secondItem="G70-L3-BEE" secondAttribute="width" id="Tfx-XJ-waB"/>
+                                            <constraint firstItem="xzK-lX-fqn" firstAttribute="height" secondItem="G70-L3-BEE" secondAttribute="height" id="TgN-ar-8Mj"/>
                                             <constraint firstItem="MBD-hn-Wtf" firstAttribute="top" secondItem="bHk-vR-Tk0" secondAttribute="top" constant="10" id="XS5-bl-Ozc"/>
+                                            <constraint firstItem="xzK-lX-fqn" firstAttribute="top" secondItem="G70-L3-BEE" secondAttribute="bottom" constant="27" id="de4-5l-iYk"/>
+                                            <constraint firstItem="xzK-lX-fqn" firstAttribute="leading" secondItem="G70-L3-BEE" secondAttribute="leading" id="eNS-mp-S7K"/>
                                             <constraint firstItem="MBD-hn-Wtf" firstAttribute="width" secondItem="bHk-vR-Tk0" secondAttribute="width" multiplier="0.8" id="hxa-uN-IZN"/>
                                             <constraint firstItem="G70-L3-BEE" firstAttribute="height" secondItem="MBD-hn-Wtf" secondAttribute="height" id="jlK-Xt-YnM"/>
                                             <constraint firstItem="G70-L3-BEE" firstAttribute="leading" secondItem="MBD-hn-Wtf" secondAttribute="leading" id="lEy-3t-l2N"/>
@@ -503,15 +520,15 @@
             </objects>
             <point key="canvasLocation" x="2754.6728971962616" y="-249.46004319654429"/>
         </scene>
-        <!--UIComponents-->
-        <scene sceneID="nKg-ZC-Raj">
+        <!--UIWidget-->
+        <scene sceneID="Zcv-8g-KXf">
             <objects>
-                <viewControllerPlaceholder storyboardName="UIComponents" id="uPN-GO-pz5" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="shg-9J-twR"/>
+                <viewControllerPlaceholder storyboardName="UIWidget" id="qdh-l9-BeB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="REJ-8Q-rjo"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uZS-8S-yCK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFQ-c0-D8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="170" y="516"/>
+            <point key="canvasLocation" x="3726" y="726"/>
         </scene>
         <!--Login-->
         <scene sceneID="YOh-Fi-HEx">
