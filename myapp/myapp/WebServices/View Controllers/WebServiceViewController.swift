@@ -39,7 +39,7 @@ class WebServiceViewController: UIViewController {
         self.registerUser(user: user)
         
     }
-
+    
 }
 //MARK: - Extention
 extension WebServiceViewController {
@@ -113,7 +113,5 @@ extension WebServiceViewController {
 }
 
 extension String {
-    var isValidEmail: Bool {
-        NSPredicate(format: Constants.email, Constants.email2).evaluate(with: self)
-    }
+    
 }

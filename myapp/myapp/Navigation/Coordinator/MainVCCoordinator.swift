@@ -7,14 +7,14 @@
 
 import Foundation
 import UIKit
-class MainCoordinator : Coordinator {
+class MainVCCoordinator : Coordinator {
     var navController : UINavigationController?
     init(_ navigationController : UINavigationController){
         navController = navigationController
     }
     func start() {
         if let firstVC = UIStoryboard(name: Constants.main, bundle: nil).instantiateViewController(withIdentifier: Constants.viewController) as? ViewController {
-            firstVC.coordinator = self
+          
             navController?.pushViewController(firstVC, animated: true)
         }
     }

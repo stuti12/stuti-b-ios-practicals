@@ -10,7 +10,7 @@ import CoreMedia
 import Alamofire
 
 class UserDataViewController: UIViewController {
-  
+    
     //MARK: - IBOutlets
     
     @IBOutlet weak var tableView: UITableView!
@@ -74,7 +74,7 @@ class UserDataViewController: UIViewController {
                 }
             }
             catch {
-               
+                
             }
         }.resume()
     }

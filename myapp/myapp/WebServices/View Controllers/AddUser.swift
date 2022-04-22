@@ -63,8 +63,8 @@ extension AddUser {
                     
                     if statusCode == Constants.responseCode {
                         DispatchQueue.main.async {
-                            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 500, height: 21))
-                            label.center = CGPoint(x: 280, y: 485)
+                            let label = UILabel(frame: CGRect(x: Constants.zero, y: Constants.zero, width: Constants.hundredSixty, height: Constants.fifteen))
+                            label.center = CGPoint(x: Constants.hundredSixty, y: Int(Constants.fourHundredEightySix))
                             label.textAlignment = .center
                             label.text = "Name:\(jsonResponse.name) \n Job: \(jsonResponse.job) \n id: \(jsonResponse.id) \n createdAt: \(jsonResponse.createdAt)"
                             label.textAlignment = .center
