@@ -611,8 +611,8 @@
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.54205605420000003" green="0.09446023597" blue="0.18701871340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cew-7f-bkN" userLabel="inner2">
-                                                <rect key="frame" x="0.0" y="399" width="375" height="517"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cew-7f-bkN" userLabel="inner2">
+                                                <rect key="frame" x="0.0" y="399" width="375" height="272"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp4-Ps-abN">
                                                         <rect key="frame" x="37.5" y="41.5" width="300" height="20.5"/>
@@ -661,10 +661,10 @@
                                 <constraints>
                                     <constraint firstItem="bAN-xG-jod" firstAttribute="top" secondItem="eQ1-aE-ccB" secondAttribute="top" id="269-Kc-aYU"/>
                                     <constraint firstItem="bAN-xG-jod" firstAttribute="trailing" secondItem="eQ1-aE-ccB" secondAttribute="trailing" id="CeB-dQ-5f4"/>
-                                    <constraint firstAttribute="bottom" secondItem="bAN-xG-jod" secondAttribute="bottom" id="MI4-Bb-oVf"/>
                                     <constraint firstItem="bAN-xG-jod" firstAttribute="width" secondItem="DDn-e4-x6M" secondAttribute="width" id="YtN-bc-iSC"/>
                                     <constraint firstItem="bAN-xG-jod" firstAttribute="bottom" secondItem="Cew-7f-bkN" secondAttribute="bottom" id="cn1-wD-Vgo"/>
                                     <constraint firstItem="bAN-xG-jod" firstAttribute="leading" secondItem="eQ1-aE-ccB" secondAttribute="leading" id="w1g-Jk-nHn"/>
+                                    <constraint firstAttribute="bottom" secondItem="bAN-xG-jod" secondAttribute="bottom" constant="-245" id="yMZ-3I-obf"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="eQ1-aE-ccB"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="G2i-6w-8QS"/>
@@ -712,7 +712,7 @@
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="4996" y="-580"/>
+            <point key="canvasLocation" x="4996" y="-580.65967016491754"/>
         </scene>
         <!--SizeClass-->
         <scene sceneID="Yde-ZG-EXu">
