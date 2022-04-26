@@ -14,7 +14,8 @@ class SecondVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tfEnterData.text = data
-        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     
     //MARK: IBActions
@@ -36,6 +37,9 @@ class SecondVC: UIViewController {
         if let vc = storyboard?.instantiateViewController(withIdentifier: Constants.forthvc) as? ForthVC{
             self.navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
 

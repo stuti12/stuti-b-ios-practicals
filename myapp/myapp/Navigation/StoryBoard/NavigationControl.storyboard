@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="320" height="480"/>
                             </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Data" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="m8w-mu-bVL">
-                                <rect key="frame" x="71" y="174" width="179" height="29"/>
+                                <rect key="frame" x="32" y="99" width="256" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -52,17 +52,17 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="m8w-mu-bVL" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="8Ch-Lg-68D"/>
                             <constraint firstItem="VuK-S0-eIB" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="E5T-i9-K0E"/>
                             <constraint firstItem="ole-ac-us2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="JNr-7q-bAu"/>
                             <constraint firstItem="ole-ac-us2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="MP3-Ci-V4e"/>
                             <constraint firstItem="cbh-MF-OZ0" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="NGw-Uf-0fi"/>
-                            <constraint firstItem="m8w-mu-bVL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="130" id="P7I-AK-7Yo"/>
                             <constraint firstItem="cbh-MF-OZ0" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="UaL-ei-Wzb"/>
+                            <constraint firstItem="m8w-mu-bVL" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bcg-da-ZSS"/>
                             <constraint firstItem="ole-ac-us2" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="fyz-iX-vz4"/>
+                            <constraint firstItem="m8w-mu-bVL" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.4" id="ghe-Fw-WUp"/>
                             <constraint firstItem="VuK-S0-eIB" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.8" id="hZO-p5-kUP"/>
-                            <constraint firstItem="m8w-mu-bVL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="71" id="hfi-K6-mwi"/>
                             <constraint firstItem="ole-ac-us2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jpS-Hr-Mg1"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="m8w-mu-bVL" secondAttribute="trailing" constant="70" id="lpx-4u-Pih"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -94,12 +94,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iJ5-6y-q6r">
-                                <rect key="frame" x="47" y="153" width="202" height="26.5"/>
+                                <rect key="frame" x="16" y="100.5" width="288" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh7-ui-wlM">
-                                <rect key="frame" x="143.5" y="218.5" width="33.5" height="17"/>
+                                <rect key="frame" x="16" y="213" width="288" height="28.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Send" cornerStyle="fixed">
                                     <backgroundConfiguration key="background" cornerRadius="3">
@@ -112,7 +112,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeQ-sr-wkZ">
-                                <rect key="frame" x="127.5" y="268.5" width="65" height="31"/>
+                                <rect key="frame" x="16" y="268.5" width="288" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Push4">
                                     <backgroundConfiguration key="background">
@@ -124,7 +124,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpu-lX-v7i">
-                                <rect key="frame" x="122.5" y="240" width="75" height="31"/>
+                                <rect key="frame" x="16" y="240" width="288" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="GoBack">
                                     <backgroundConfiguration key="background">
@@ -139,18 +139,24 @@
                         <viewLayoutGuide key="safeArea" id="iJM-bg-YBC"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="iJM-bg-YBC" firstAttribute="trailing" secondItem="iJ5-6y-q6r" secondAttribute="trailing" constant="71" id="3z1-vF-czh"/>
+                            <constraint firstItem="iJ5-6y-q6r" firstAttribute="centerY" secondItem="JRA-K9-QMR" secondAttribute="centerY" multiplier="0.4" id="5Mb-d0-lMc"/>
                             <constraint firstItem="fh7-ui-wlM" firstAttribute="centerX" secondItem="JRA-K9-QMR" secondAttribute="centerX" id="5ms-vR-rDq"/>
+                            <constraint firstItem="fh7-ui-wlM" firstAttribute="height" secondItem="JRA-K9-QMR" secondAttribute="height" multiplier="0.0499296" id="6WI-Ja-eYb"/>
                             <constraint firstItem="HeQ-sr-wkZ" firstAttribute="centerY" secondItem="JRA-K9-QMR" secondAttribute="centerY" id="6WW-hH-Ia6"/>
                             <constraint firstItem="gpu-lX-v7i" firstAttribute="centerY" secondItem="JRA-K9-QMR" secondAttribute="centerY" multiplier="0.9" id="ArV-xw-6o9"/>
+                            <constraint firstItem="fh7-ui-wlM" firstAttribute="width" secondItem="JRA-K9-QMR" secondAttribute="width" multiplier="0.9" id="Ba8-K5-V2K"/>
+                            <constraint firstItem="HeQ-sr-wkZ" firstAttribute="width" secondItem="JRA-K9-QMR" secondAttribute="width" multiplier="0.9" id="BiN-LM-uSg"/>
                             <constraint firstItem="W9q-Dj-nKp" firstAttribute="centerX" secondItem="JRA-K9-QMR" secondAttribute="centerX" id="FEr-Pe-dK1"/>
-                            <constraint firstItem="iJ5-6y-q6r" firstAttribute="top" secondItem="W9q-Dj-nKp" secondAttribute="bottom" constant="109" id="G0N-je-9Km"/>
+                            <constraint firstItem="gpu-lX-v7i" firstAttribute="width" secondItem="JRA-K9-QMR" secondAttribute="width" multiplier="0.9" id="FWZ-1N-R6B"/>
                             <constraint firstItem="HeQ-sr-wkZ" firstAttribute="centerX" secondItem="JRA-K9-QMR" secondAttribute="centerX" id="HD8-5S-xWX"/>
                             <constraint firstItem="W9q-Dj-nKp" firstAttribute="leading" secondItem="iJM-bg-YBC" secondAttribute="leading" id="JhY-bQ-hcP"/>
+                            <constraint firstItem="iJ5-6y-q6r" firstAttribute="centerX" secondItem="JRA-K9-QMR" secondAttribute="centerX" id="b9A-fg-6ea"/>
+                            <constraint firstItem="iJ5-6y-q6r" firstAttribute="width" secondItem="JRA-K9-QMR" secondAttribute="width" multiplier="0.9" id="blS-8R-Nsh"/>
                             <constraint firstItem="gpu-lX-v7i" firstAttribute="centerX" secondItem="JRA-K9-QMR" secondAttribute="centerX" id="c7W-Gi-4ej"/>
                             <constraint firstItem="fh7-ui-wlM" firstAttribute="centerY" secondItem="JRA-K9-QMR" secondAttribute="centerY" multiplier="0.8" id="gsg-dj-5lr"/>
                             <constraint firstItem="W9q-Dj-nKp" firstAttribute="top" secondItem="iJM-bg-YBC" secondAttribute="top" id="j96-XD-DeI"/>
-                            <constraint firstItem="iJ5-6y-q6r" firstAttribute="leading" secondItem="iJM-bg-YBC" secondAttribute="leading" constant="47" id="p2C-ed-0RI"/>
+                            <constraint firstItem="gpu-lX-v7i" firstAttribute="height" secondItem="JRA-K9-QMR" secondAttribute="height" multiplier="0.0545775" id="lSX-qj-goi"/>
+                            <constraint firstItem="HeQ-sr-wkZ" firstAttribute="height" secondItem="JRA-K9-QMR" secondAttribute="height" multiplier="0.0545775" id="yAF-pH-Ydn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="VC2" id="hZ4-hx-Nc3">

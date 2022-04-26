@@ -11,9 +11,10 @@ class MVPViewController: UIViewController{
     
     //MARK: - IBOUtlet
     private var presenter: LoginPresenter?
-    @IBOutlet weak var tfName: UITextField!
-    @IBOutlet weak var tfEmail: UITextField!
    
+    @IBOutlet weak var tfEmail: UITextField!
+    
+    @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var lblMessage: UILabel!
     var coordinator: MVPCoordinator?
     let validCrendential = NSLocalizedString("Login Successful", comment: "")
@@ -24,6 +25,8 @@ class MVPViewController: UIViewController{
         super.viewDidLoad()
         presenter = LoginPresenter()
         presenter?.delegate = self
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     
     //MARK: - IBAction
@@ -31,7 +34,10 @@ class MVPViewController: UIViewController{
     @IBAction func btnSignUp(_ sender: Any) {
         self.lblMessage.isHidden = true
         
-        self.presenter?.validateData(userName:tfName.text ?? "no data",password:tfEmail.text ?? "no data")
+        self.presenter?.validateData(userName:tfEmail.text ?? "no data",password:tfEmail.text ?? "no data")
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
 //MARK: - Extention
@@ -49,5 +55,20 @@ extension MVPViewController: VCDelegate {
         let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+    }
+}
+//MARK: - Extention
+extension MVPViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case tfEmail:
+            tfEmail.resignFirstResponder()
+            tfPassword.becomeFirstResponder()
+        case tfPassword:
+            tfPassword.resignFirstResponder()
+        default:
+            break
+        }
+        return true
     }
 }

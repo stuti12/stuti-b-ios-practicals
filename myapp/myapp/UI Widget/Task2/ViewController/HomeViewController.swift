@@ -11,8 +11,8 @@ class HomeViewController: UIViewController {
     
     //MARK: - IBOutlet
     @IBOutlet weak var fruitTableView: UITableView!
-    @IBOutlet weak var segmentControl: UISegmentedControl!
     
+    @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var searchItem: UISearchBar!
     @IBOutlet weak var fruitCollectionView: UICollectionView!
     var searching = false
@@ -20,33 +20,21 @@ class HomeViewController: UIViewController {
     var searchList = [FruitData]()
     var imageView = UIImageView()
     var size : CGFloat = 1
-    
+    var cName: String = ""
+       var cImage: String = ""
+       
     //MARK: Life cycle methods
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        fruitTableView.delegate = self
         searchItem.delegate = self
         fillData()
-        fruitTableView.register(UINib(nibName: "MyTableViewCell", bundle: nil),forCellReuseIdentifier:"cell")
-        imageView.backgroundColor = UIColor.red
-        imageView.frame = CGRect(x: 0, y: 0, width: size, height: size)
-        imageView.image = UIImage(named: "apple")
-        self.view.addSubview(imageView)
-        
-        fruitCollectionView.refreshControl = UIRefreshControl()
-        fruitCollectionView.refreshControl?.addTarget(self, action: #selector(pullIt), for: .valueChanged)
-        
     }
     
-    @objc func pullIt() {
-        self.fruitTableView.reloadData()
-        self.fruitCollectionView.reloadData()
-        fruitTableView.refreshControl?.endRefreshing()
-        fruitCollectionView.refreshControl?.endRefreshing()
-    }
     //MARK: IBActions
+    
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
-        
         if sender.selectedSegmentIndex == Constants.zero {
             self.fruitCollectionView.alpha = CGFloat(Constants.one)
             self.fruitTableView.alpha = CGFloat(Constants.zero)
@@ -55,6 +43,7 @@ class HomeViewController: UIViewController {
             self.fruitCollectionView.alpha = CGFloat(Constants.zero)
             self.fruitTableView.alpha = CGFloat(Constants.one)
         }
+        
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
@@ -70,8 +59,20 @@ class HomeViewController: UIViewController {
         }
     }
     
+    
     //MARK: Extra Function
     private func fillData() {
+        fruitTableView.register(UINib(nibName: Constants.fruitTableCell, bundle: nil),forCellReuseIdentifier:Constants.tableCell)
+        imageView.backgroundColor = UIColor.red
+        imageView.frame = CGRect(x: 0, y: 0, width: size, height: size)
+        imageView.image = UIImage(named: "apple")
+        self.view.addSubview(imageView)
+        
+        fruitCollectionView.refreshControl = UIRefreshControl()
+        fruitCollectionView.refreshControl?.addTarget(self, action: #selector(pullIt), for: .valueChanged)
+        fruitTableView.refreshControl = UIRefreshControl()
+        fruitTableView.refreshControl?.addTarget(self, action: #selector(pullIt), for: .valueChanged)
+        
         let fruit1 = FruitData(fruitname: "apple", fruitsImage: "apple")
         fruitList.append(fruit1)
         
@@ -79,11 +80,27 @@ class HomeViewController: UIViewController {
         fruitList.append(fruit2)
         let fruit3 = FruitData(fruitname: "strawberry", fruitsImage: "strawberry")
         fruitList.append(fruit3)
+        fruitList.append(fruit1)
+        fruitList.append(fruit2)
+        fruitList.append(fruit3)
+        fruitList.append(fruit1)
+        fruitList.append(fruit2)
+        fruitList.append(fruit1)
+        fruitList.append(fruit2)
+        
+        self.fruitCollectionView.bounces = false
+        self.fruitTableView.bounces = false
+    }
+    @objc func pullIt() {
+        self.fruitTableView.reloadData()
+        self.fruitCollectionView.reloadData()
+        fruitTableView.refreshControl?.endRefreshing()
+        fruitCollectionView.refreshControl?.endRefreshing()
     }
 }
 
 //MARK: Extention for Collectionview Datasource and Delegate
-extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSource {
+extension HomeViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if searching == true
         {
@@ -107,11 +124,16 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         }
         cell.layer.borderColor = UIColor.black.cgColor
         cell.layer.borderWidth = CGFloat(Constants.two)
-        
         return cell
     }
     
-    
+}
+extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+                cName = fruitList[indexPath.row].fruitName
+                cImage = fruitList[indexPath.row].fruitImage
+                performSegue(withIdentifier: Constants.switchStack, sender: self)
+    }
 }
 //MARK: Extention for SearchBar
 extension HomeViewController : UISearchBarDelegate {
@@ -127,16 +149,15 @@ extension HomeViewController : UISearchBarDelegate {
 }
 
 //MARK: Extention for TableViewDelegate
-extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
+
+extension HomeViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if searching == true
-        {
+        if searching {
             return searchList.count
         }
         else {
             return fruitList.count
         }
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -154,6 +175,13 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
             cell.labelName.text = fruitList[indexPath.row].fruitName
         }
         return cell
+        
     }
-    
+}
+extension HomeViewController: UITableViewDelegate {
+         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+             cName = fruitList[indexPath.row].fruitName
+             cImage = fruitList[indexPath.row].fruitImage
+             performSegue(withIdentifier: Constants.switchStack, sender: self)
+        }
 }

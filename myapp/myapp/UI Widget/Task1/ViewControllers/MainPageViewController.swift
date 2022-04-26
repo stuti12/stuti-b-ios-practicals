@@ -2,7 +2,7 @@
 import UIKit
 
 class MainPageViewController: UIPageViewController {
-    lazy var orderViewController : [UIViewController] = [viewControllerWith(name: "UIWidgetViewController"),viewControllerWith(name: "SignInTableViewController")]
+    lazy var orderViewController : [UIViewController] = [viewControllerWith(name: Constants.uiWidgetViewController),viewControllerWith(name: Constants.signIn)]
     var isLoading : Bool = false
     var curIndex : Int = 0
     
@@ -23,7 +23,7 @@ class MainPageViewController: UIPageViewController {
     
     //MARK: Extra Functions
     func viewControllerWith(name : String) -> UIViewController {
-        return UIStoryboard(name: "UIWidget", bundle:  nil).instantiateViewController(withIdentifier: name)
+        return UIStoryboard(name: Constants.uiWidgetStoryboard, bundle:  nil).instantiateViewController(withIdentifier: name)
     }
     func setUpController() {
         curIndex = 0
@@ -38,8 +38,8 @@ extension MainPageViewController : UIPageViewControllerDelegate, UIPageViewContr
         guard let viewControllerIndex = orderViewController.firstIndex(of: viewController) else {
             return nil
         }
-        let previousIndex = viewControllerIndex - 1
-        guard previousIndex >= 0 else {
+        let previousIndex = viewControllerIndex - Constants.one
+        guard previousIndex >= Constants.zero else {
             return nil
         }
         guard orderViewController.count > previousIndex else {

@@ -22,9 +22,8 @@ class WebServiceViewController: UIViewController {
     //MARK: - Lifecycle method
     override func viewDidLoad() {
         super.viewDidLoad()
-        tfEnterMail.text! = "eve.holt@reqres.in"
-        tfEnterPassword.text! = "cityslicka"
-        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     //MARK: - IBActions
     
@@ -98,7 +97,7 @@ extension WebServiceViewController {
                         }
                     }
                     
-                }   catch let error {
+                }   catch _ {
                     self.dispayAlert(msg: self.alertFail)
                 }
             }
@@ -110,8 +109,22 @@ extension WebServiceViewController {
         alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
 
-extension String {
-    
+extension WebServiceViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case tfEnterMail:
+            tfEnterMail.resignFirstResponder()
+            tfEnterPassword.becomeFirstResponder()
+        case tfEnterPassword:
+            tfEnterPassword.resignFirstResponder()
+        default:
+            break
+        }
+        return true
+    }
 }

@@ -20,11 +20,16 @@ class AddUser: UIViewController {
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     
     //MARK: IBAction
     @IBAction func brnAdd(_ sender: UIButton) {
         addUser(name: tfUserName.text ?? "no data", job: tfAddJob.text ?? "no data")
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
 }

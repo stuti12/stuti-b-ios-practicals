@@ -11,7 +11,7 @@ class AuthenticationVM {
     var userName = Dynamic<String?>("default")
     var email : String = ""
     let emptyPassword = NSLocalizedString("Password Empty", comment: "")
-    let emptyUserName = NSLocalizedString("Password Empty", comment: "")
+    let emptyUserName = NSLocalizedString("Username Empty", comment: "")
 
     typealias authenticationLoginCallBack = (_ status: Bool, _ message: String)-> Void
     var callback: authenticationLoginCallBack?

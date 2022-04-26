@@ -12,7 +12,9 @@ class FirstVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tfEnterData.text = message
-      
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+     
     }
     /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        // guard var second : GoTo2VC = segue.destination as? GoTo2VC else {return}
@@ -33,6 +35,9 @@ class FirstVC: UIViewController {
     }
     @IBAction func barButton(_ sender: UIBarButtonItem) {
         coordinator?.goTOSecondVC(strName: tfEnterData.text ?? "No Data")
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
 

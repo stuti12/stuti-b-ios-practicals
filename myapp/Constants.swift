@@ -7,11 +7,17 @@
 
 import Foundation
 struct Constants {
+    static let autoLayout  = "goToAutoLayout"
+    static let uiWidgetViewController = "UIWidgetViewController"
+    static let signIn = "SignInTableViewController"
+    
+    //MARK: - UI Widget
     static let UIWidgetViewController = "goToUIWidgets"
-    static let TabBarViewController = "goToTabBar"
     static let CollectionController = "goToCollection"
     static let Practical3ViewController = "goToPrac3"
+    static let TabBarViewController = "goToTabBar"
     static let tableCell = "cell"
+    static let fruitTableCell =  "MyTableViewCell"
     static let collectionCell = "collectioncell"
     static let MainViewController = "goToUIWidget"
     static let arr1 = "ABC"
@@ -22,6 +28,11 @@ struct Constants {
     static let avc = "avc"
     static let printdata = "Load Data"
     static let cell = "DemoCollectionViewCell"
+    static let switchStackCollection = ""
+    static let switchStack = "switchStack"
+    static let urls = "https://www.google.com"
+    
+    //MARK: - Navigation Control
     static let storyboard = "NavigationControl"
     static let firstvc = "FirstVC"
     static let secondvc = "SecondVC"
@@ -29,11 +40,14 @@ struct Constants {
     static let forthvc = "ForthVC"
     static let viewController = "ViewController"
     static let main = "Main"
+    static let uiWidgetStoryboard = "UIWidget"
     static let eight = 8
     static let two = 2
     static let zero: Int = 0
     static let one: Int = 1
     static let twenty: Int = 20
+    
+    //MARK: - WebService
     static let webService = "goToWebService"
     static let url: String = "https://reqres.in/api/"
     static let dataview = "UserDataViewController"
@@ -52,6 +66,8 @@ struct Constants {
     static let forteen = 14
     static let fortySix = 46
     static let fourHundredEightySix : Float = 486
+    
+    //MARK: - Architecture
     static let storymvc = "MVCViewTraffic"
     static let storymvp = "MVP"
     static let storymvvm = "MVVMLogin"

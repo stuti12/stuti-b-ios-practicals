@@ -15,11 +15,6 @@ class UIWidgetMainViewController: UIViewController {
             guard segue.destination is TabsViewController else { return }
         }
         
-        if segue.identifier == Constants.Practical3ViewController {
-            guard segue.destination is Practical3ViewController else {
-                return
-            }
-        }
     }
     
     //MARK: - IBActions

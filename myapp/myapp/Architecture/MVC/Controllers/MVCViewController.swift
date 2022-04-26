@@ -21,6 +21,8 @@ class MVCViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     
     //MARK: - IBActions
@@ -42,7 +44,9 @@ class MVCViewController: UIViewController {
             showAlertBox(message: "Email: \(data?.email ?? "No data") \n Password:\(data?.pswd ?? "No password")" )
         }
     }
-    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     //MARK: - Functions
     
     private func showAlertBox(message: String){
@@ -59,10 +63,17 @@ extension String {
     }
 }
 
-extension MVCViewController: UITextViewDelegate {
+extension MVCViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        //textField.resignFirstResponder()
-        self.view.endEditing(true)
-        return false
+        switch textField {
+        case tfEmail:
+            tfEmail.resignFirstResponder()
+            tfPassword.becomeFirstResponder()
+        case tfPassword:
+            tfPassword.resignFirstResponder()
+        default:
+            break
+        }
+        return true
     }
 }
